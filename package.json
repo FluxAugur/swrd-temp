@@ -1,0 +1,30 @@
+{
+  "name": "edu-etsu-swrd",
+  "version": "1.0.0",
+  "description": "ETSU Social Work Resource Database",
+  "main": "index.js",
+  "scripts": {
+    "sls": "serverless",
+    "env:export": "sls export-env",
+    "start": "sls offline start",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "deploy": "sls deploy --aws-profile serverless",
+    "package": "sls package --aws-profile serverless",
+    "remove": "sls remove --aws-profile serverless"
+  },
+  "author": "Nathanial L. McConnell <znlm12@etsu.edu>",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.425.0",
+    "jest": "^24.5.0",
+    "serverless": "^1.39.1",
+    "serverless-deployment-bucket": "^1.0.1",
+    "serverless-export-env": "github:arabold/serverless-export-env",
+    "serverless-offline": "^4.9.2",
+    "serverless-plugin-encode-env-var-objects": "^1.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^7.0.0"
+  }
+}

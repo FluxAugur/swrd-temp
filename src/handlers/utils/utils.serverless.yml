@@ -1,0 +1,12 @@
+currentTime:
+  handler: src/handlers/utils/current-time.handler
+  events:
+    - http: get /ping
+deliverEmail:
+  handler: src/handlers/utils/deliver-email.handler
+  events:
+    - http: post /email/deliver
+hello:
+  handler: src/handlers/utils/hello.handler
+  events:
+    - http: get /hello
